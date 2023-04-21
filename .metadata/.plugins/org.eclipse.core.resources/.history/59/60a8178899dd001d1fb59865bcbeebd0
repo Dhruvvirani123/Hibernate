@@ -1,0 +1,15 @@
+package Connection;
+
+import java.util.Properties;
+
+import org.hibernate.Session;
+import org.hibernate.cfg.Configuration;
+
+public class DBConnection {
+	Session session = null;
+	Properties prop = null;
+	Configuration cfg = null;
+	public Session getSession() {
+		
+	}
+}

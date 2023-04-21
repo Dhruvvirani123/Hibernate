@@ -1,0 +1,10 @@
+package OneToMany;
+
+import javax.persistence.Entity;
+
+@Entity
+public class Seller {
+	private int id;
+	private String name;
+	private 
+}

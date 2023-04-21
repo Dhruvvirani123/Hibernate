@@ -1,0 +1,13 @@
+package OneToMany;
+
+import javax.persistence.Entity;
+
+import antlr.collections.List;
+
+
+@Entity
+public class Seller {
+	private int id;
+	private String name;
+	private List<>
+}
