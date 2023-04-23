@@ -26,14 +26,17 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.Hibernate1.Dhruv_Project"/>
 			<item value="com.hibernate.New2"/>
 			<item value="com.hibernate"/>
 			<item value="com.hibernate.HibernateCore"/>
 		</list>
 		<list key="groupId">
+			<item value="com.Hibernate1"/>
 			<item value="com.hibernate"/>
 		</list>
 		<list key="artifactId">
+			<item value="Dhruv_Project"/>
 			<item value="New2"/>
 			<item value="NewH"/>
 			<item value="New"/>

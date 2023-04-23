@@ -31,8 +31,11 @@ public class Usercontroller extends HttpServlet {
 			u.setAddress(request.getParameter("address"));
 			u.setEmail(request.getParameter("email"));
 			u.setPassword(request.getParameter("password"));
-			System.out.println(u);
-			
+//			System.out.println(u);
+			new Userdao().InsertData(u);
+			request.setAttribute("msg", "Data Registred");
+			request.getRequestDispatcher("login.jsp").forward(request, response);
+			   
 		}
 	}
 }

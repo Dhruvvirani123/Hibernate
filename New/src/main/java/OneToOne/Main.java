@@ -8,7 +8,7 @@ import org.hibernate.cfg.Configuration;
 public class Main {
 
 	public static void main(String[] args) {
-		SessionFactory dv = new Configuration().configure("hibarnate.cfg.xml").buildSessionFactory();
+		SessionFactory dv = new Configuration().configure("hibernate.cfg.xml").buildSessionFactory();
 		Session session = dv.openSession();
 		Transaction tx = session.beginTransaction();
 		
@@ -29,6 +29,19 @@ public class Main {
 		a2.setId(4);
 		a2.setAnswer("Ahmed Shah");
 		
+		q1.setAnswer(a1);
+		q2.setAnswer(a2);
 		
+		a1.setQuestion(q1);
+		a2.setQuestion(q2);
+		
+		session.save(q1);
+		session.save(q2);
+		session.save(a1);
+		session.save(a2);
+		
+		tx.commit();
+		session.close();
+		dv.close();
 	}
 }
