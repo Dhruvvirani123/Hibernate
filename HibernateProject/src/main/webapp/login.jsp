@@ -7,7 +7,7 @@
 <title>Hibernate</title>
 </head>
 <body>
-	<form action="UserController" method="post">
+	<form action="Usercontroller" method="post">
 		<table>
 			<tr>
 				<td>Email :</td>
