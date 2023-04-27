@@ -1,5 +1,7 @@
 package com.Hibernate1.Dhruv_Project;
 
+import java.sql.Date;
+
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
@@ -21,12 +23,22 @@ public class User {
 		st.setName("Dhruv");
 		st.setAddress("Amreli");
 		System.out.println(st);
+		
+		Address ad = new Address();
+		ad.setStreet("Street 1");
+		ad.setCity("Surat");
+		ad.setIsopen(true);
+		ad.setX(12.34);
+		
+		
 
 		se.save(st);
+		se.save(ad);
 
 		tx.commit();
 		se.close();
 		se.close();
 
+		System.out.println("Done");
 	}
 }

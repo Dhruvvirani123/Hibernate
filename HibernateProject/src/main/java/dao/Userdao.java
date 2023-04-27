@@ -46,6 +46,23 @@ public class Userdao {
 		return list;
 	}
 	public void updateUser(User u) {
+		session = new DBConnection().getSession();
+		tx = session.beginTransaction();
+		Query q = session.createQuery("update User u set u.name=:name, u.contact=:contact, where u.id=:id");
+		q.setParameter("name", u.getName());
+		q.setParameter("email", u.getEmail());
+		q.setParameter("password", u.getPassword());
 		
+		u = list.get(0);
+		tx.commit();
+		session.close();
+	}
+	public void deleteUser(int id) {
+		session = new DBConnection().getSession();
+		tx = session.beginTransaction();
+		Query q = session.createQuery("delete from User u where u.id=:id");
+		q.setParameter("id", id);
+		tx.commit();
+		session.close();
 	}
 }
