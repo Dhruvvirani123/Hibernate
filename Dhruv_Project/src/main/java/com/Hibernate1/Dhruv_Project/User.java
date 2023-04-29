@@ -1,7 +1,5 @@
 package com.Hibernate1.Dhruv_Project;
 
-import java.sql.Date;
-
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.Transaction;
