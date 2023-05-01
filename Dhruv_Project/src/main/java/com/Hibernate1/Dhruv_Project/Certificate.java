@@ -1,5 +1,8 @@
 package com.Hibernate1.Dhruv_Project;
 
+import javax.persistence.Embeddable;
+
+@Embeddable
 public class Certificate {
 	private String course;
 	private String duration;

@@ -22,6 +22,11 @@ public class EmDemo {
 		
 		stu.setCerti(cer);
 		
+		se.save(stu);
+		se.save(cer);
 		
+		tx.commit();
+		se.close();
+		fc.close();
 	}
 }
