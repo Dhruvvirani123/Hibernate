@@ -2507,3 +2507,4 @@ org.eclipse.core.runtime.CoreException: Launch configuration App references non-
 2023-05-01 17:36:57,600 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Hibarnate\Dhruv_Project\src\main\resources
 2023-05-01 17:36:57,603 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2023-05-01 17:36:57,603 [Worker-42: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Hibarnate\Dhruv_Project\src\test\resources
+2023-05-02 05:46:22,904 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
