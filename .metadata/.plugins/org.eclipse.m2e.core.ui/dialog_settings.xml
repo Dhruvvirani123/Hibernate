@@ -2,6 +2,7 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="D:\Hibarnate\Hibernate_New\src\main\java\hibernate.cfg.xml"/>
 			<item value="D:\Hibarnate\New\src\main\java\com\hibernate\User.java"/>
 		</list>
 		<list key="projectNameTemplate">
@@ -26,21 +27,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
-			<item value="com.Hibernate1.Dhruv_Project"/>
-			<item value="com.hibernate.New2"/>
 			<item value="com.hibernate"/>
-			<item value="com.hibernate.HibernateCore"/>
 		</list>
 		<list key="groupId">
-			<item value="com.Hibernate1"/>
 			<item value="com.hibernate"/>
 		</list>
 		<list key="artifactId">
-			<item value="Dhruv_Project"/>
-			<item value="New2"/>
-			<item value="NewH"/>
-			<item value="New"/>
-			<item value="HibernateCore"/>
+			<item value="Hibernate_New"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>

@@ -54,4 +54,6 @@
     <fullyQualifiedTypeName name="OneToOne.Question"/>
     <fullyQualifiedTypeName name="OneToOne.Answer"/>
     <fullyQualifiedTypeName name="org.hibernate.Session"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Id"/>
+    <fullyQualifiedTypeName name="jakarta.persistence.Entity"/>
 </qualifiedTypeNameHistroy>

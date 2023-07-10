@@ -10,19 +10,19 @@ public class MapDemo {
 		SessionFactory fc = new Configuration().configure("Hibernate.cfg.xml").buildSessionFactory();
 		Session se = fc.openSession();
 		Transaction tx = se.beginTransaction();
-		
+
 		Question q1 = new Question();
 		q1.setQuestion_id(1);
 		q1.setQuestion("What is Java ?");
-		
+
 		Answer ans = new Answer();
 		ans.setAnswer_id(1);
 		ans.setAnswer("Java is Programing Language");
-		
+
 		q1.setAnswer(ans);
 		se.save(q1);
 		se.save(ans);
-		
+
 		tx.commit();
 		fc.close();
 	}
